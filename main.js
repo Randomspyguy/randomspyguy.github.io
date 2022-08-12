@@ -1,15 +1,12 @@
 $(document).ready(function(){
 
-
-
-
     $('#about').click(function(){
         $("#about").addClass('alert').removeClass('warning');
         $("#portfolio").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
 
-        $("h1").css({'color': '#DAC2D9'});
+        $("h1").css({'color': '#CDD3AC'});
         
     });
 
@@ -18,7 +15,7 @@ $(document).ready(function(){
         $("#about").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
-        $("h1").css({'color': '#B5A8CE'});
+        $("h1").css({'color': '#1C7FAB'});
         
     });
 
@@ -27,7 +24,7 @@ $(document).ready(function(){
         $("#portfolio").addClass('warning').removeClass('alert');
         $("#about").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
-        $("h1").css({'color': '#9CC4C4'});
+        $("h1").css({'color': '#7DCBC9'});
         
     });
 
@@ -36,7 +33,7 @@ $(document).ready(function(){
         $("#portfolio").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#about").addClass('warning').removeClass('alert');
-        $("h1").css({'color': '#8EB1C6'});
+        $("h1").css({'color': '#F9E7D1'});
         
     });
 

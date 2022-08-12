@@ -2,7 +2,6 @@ html {
     height: 100%;
 }
 body {
-    margin: 0 auto;
     background-color: #504F4A;
     padding: 20px;
     border-style: solid;
@@ -18,6 +17,16 @@ body {
     -webkit-box-shadow: inset 0 0 50px #000000;
     box-shadow:         inset 0 0 50px #000000;
 }
+
+
+div.container{
+    position: absolute;
+    top: 35%;
+    bottom: 50;
+    left: 0;
+    right: 0;
+}
+
 h1 {
     font-family: Silkscreen, cursive;
     font-weight: 500;
@@ -44,7 +53,7 @@ h2, .button {
 .button {
     margin: 10px;
 }
-
+/* 
 #title h1 {
     margin-right: 7px;
-}
+} */
