@@ -33,12 +33,13 @@ h1 {
     font-size: 65px;
     color: #F6D565;
 }
-h2, .button {
+h2, h3, .button {
     font-family: 'Source Code Pro', monospace;
     font-size: 25px;
     font-style: italic;
     font-weight: 500;
     color: #C43016;
+    text-align: center;
 }
 .blink_me {
     animation: blinker 1.5s linear infinite;

@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("#about").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
-        $("h1").css({'color': '#1C7FAB'});
+        $("h1").css({'color': '#DAC2D9'});
         
     });
 
