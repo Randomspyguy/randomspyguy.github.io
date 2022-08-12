@@ -42,7 +42,7 @@ h2, h3, .button {
     text-align: center;
 }
 .blink_me {
-    animation: blinker 1.5s linear infinite;
+    animation: blinker 2s linear infinite;
   }
   
 @keyframes blinker {
