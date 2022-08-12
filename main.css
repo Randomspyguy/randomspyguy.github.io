@@ -41,7 +41,7 @@ h2, .button {
     color: #C43016;
 }
 .blink_me {
-    animation: blinker .75s linear infinite;
+    animation: blinker 1.5s linear infinite;
   }
   
 @keyframes blinker {
