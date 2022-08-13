@@ -35,7 +35,7 @@ h1 {
     font-size: 65px;
     color: #F6D565;
 }
-h2, h3, .button {
+#desc h2, #desc h3, .menu {
     font-family: 'Source Code Pro', monospace;
     font-size: 25px;
     font-style: italic;
@@ -61,3 +61,4 @@ h2, h3, .button {
 #title h1 {
     margin-right: 7px;
 } */
+
