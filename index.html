@@ -8,43 +8,47 @@
         <!-- Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-
-    <!-- Compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
     <script
         src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
         crossorigin="anonymous">
     </script>
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
     <link rel="icon" type="image/x-icon" href="/favicon.png">
 </head>
 <html>
     <body>
-        <div class="container" id="wrapper">
-            <div id="title">
-                <div class="grid-x grid-padding-x align-center">
-                    <div id="name">
-                        <button><h1><:<span class="blink_me">/ </span>Zak Humphrey <span class="blink_me">\</span>:></h1></button>
-                    </div>
+        <div class="title">
+            <div class="grid-x grid-padding-x align-center">
+                <div id="name">
+                    <button><h1><:<span class="blink_me">/ </span>Zak Humphrey <span class="blink_me">\</span>:></h1></button>
                 </div>
-                <div class="grid-x grid-padding-x align-center">
-                    <div id="desc">
-                        <h2>Welcome to my little corner of the internet.</h2>
-                        <h2 style="color: #9CC4C4">So glad you could join me.</h2>
-                    </div>
+            </div>
+            <div class="grid-x grid-padding-x align-center">
+                <div id="desc" class="animate__animated">
+                    <h2>Welcome to my little corner of the internet.</h2>
+                    <h2 style="color: #9CC4C4">So glad you could join me.</h2>
                 </div>
             </div>
             <br>
-            <div class="grid-x grid-padding-x align-center">
-                <div class="menu">
-                    <button id="about" class="button large warning round">About Me</button>
-                    <button id="portfolio" class="button large warning round">Portfolio</button>
-                    <button id="projects" class="button large warning round">Projects</button>
-                    <button id="contact" class="button large warning round">Contact</button>
-                </div>
+            <div class="menu grid-x grid-padding-x align-center">
+                <button id="home" class="button large success round animate__animated" onclick="window.location.href='index.html';">Home</button>
+                <button id="about" class="button large warning round animate__animated">About Me</button>
+                <button id="portfolio" class="button large warning round animate__animated">Portfolio</button>
+                <button id="projects" class="button large warning round animate__animated">Projects</button>
+                <button id="contact" class="button large warning round animate__animated">Contact</button>
             </div>
+        </div>
+        <div class="footer">
+            <a>Copyright &copy; Zakary Humphrey. All Rights Reserved.</a>
         </div>
     </body>
 </html>

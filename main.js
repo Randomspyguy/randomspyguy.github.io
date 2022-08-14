@@ -1,17 +1,33 @@
 $(document).ready(function(){
 
-    $('#about').click(function(){
-        $("#about").addClass('alert').removeClass('warning');
+    $('#about, #portfolio, #projects, #contact').click(function(){
+        $(".title").addClass("animate-5vw-up");
+    }) 
+
+    $('#home').click(function(){
+        $("#home").addClass('success').removeClass('warning');
+        $("#about").addClass('warning').removeClass('alert');
         $("#portfolio").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
-
         $("h1").css({'color': '#CDD3AC'});
+    })
+    
+    
+    $('#about').click(function(){
+        $("#about").addClass('success').removeClass('warning');
+        $("#home").addClass('warning').removeClass('alert');
+        $("#portfolio").addClass('warning').removeClass('alert');
+        $("#projects").addClass('warning').removeClass('alert');
+        $("#contact").addClass('warning').removeClass('alert');
+        $("h1").css({'color': '#CDD3AC'});
+
         
     });
 
     $('#portfolio').click(function(){
-        $("#portfolio").addClass('alert').removeClass('warning');
+        $("#portfolio").addClass('success').removeClass('warning');
+        $("#home").addClass('warning').removeClass('alert');
         $("#about").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
@@ -20,7 +36,8 @@ $(document).ready(function(){
     });
 
     $('#projects').click(function(){
-        $("#projects").addClass('alert').removeClass('warning');
+        $("#projects").addClass('success').removeClass('warning');
+        $("#home").addClass('warning').removeClass('alert');
         $("#portfolio").addClass('warning').removeClass('alert');
         $("#about").addClass('warning').removeClass('alert');
         $("#contact").addClass('warning').removeClass('alert');
@@ -29,12 +46,12 @@ $(document).ready(function(){
     });
 
     $('#contact').click(function(){
-        $("#contact").addClass('alert').removeClass('warning');
+        $("#contact").addClass('success').removeClass('warning');
+        $("#home").addClass('warning').removeClass('alert');
         $("#portfolio").addClass('warning').removeClass('alert');
         $("#projects").addClass('warning').removeClass('alert');
         $("#about").addClass('warning').removeClass('alert');
         $("h1").css({'color': '#F9E7D1'});
         
     });
-
 });
