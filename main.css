@@ -4,18 +4,21 @@ html {
 body {
     background-color: #504F4A;
     padding: 20px;
-    border-style: solid;
-    border-width: 25px;
-    border-color: #31312D;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    -moz-box-shadow:    inset 0 0 50px #000000;
-    -webkit-box-shadow: inset 0 0 50px #000000;
-    box-shadow:         inset 0 0 50px #000000;
-    z-index: 0;
+}
+
+.body-border {
+  box-sizing: border-box;
+  position: absolute;
+  border-style: solid;
+  border-width: 25px;
+  border-color: #31312D;
+  top: 0;
+  left: 0;
+  right: 0;
+  -moz-box-shadow:    inset 0 0 50px #000000;
+  -webkit-box-shadow: inset 0 0 50px #000000;
+  box-shadow:         inset 0 0 50px #000000;
+  z-index: 0;
 }
 
 /* width */
@@ -44,15 +47,42 @@ div.title{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
+div.about {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: max-content;
+  position: relative;
+  margin-top: 25vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  z-index: 2;
+}
+
+
+.about_text {
+  grid-column: span 2;
+}
+
+#about_ln1, #about_ln2 {
+  background-color: transparent; 
+  color: #9CC4C4; 
+  border: 0px; 
+  font-size: 15px;
+}
+
+
+
 div.footer {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
 }
 
 div.footer a {
@@ -62,14 +92,13 @@ div.footer a {
 
 }
 
-
-h1 {
+#main-title {
     font-family: Silkscreen, cursive;
     font-weight: 500;
     font-size: 65px;
     color: #F6D565;
 }
-#desc h2, #desc h3, .menu {
+#desc #subtitle, #subtitle2, #desc, .menu {
     font-family: 'Source Code Pro', monospace;
     font-size: 25px;
     font-style: italic;
@@ -107,5 +136,4 @@ h1 {
       -webkit-transform: translate(0, -10vw);
     }
   }
-
 
