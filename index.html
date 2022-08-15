@@ -1,78 +1,49 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- Compressed CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-        crossorigin="anonymous">
-    </script>
-
-    <!-- Compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="/scritps/css/index.css">
+    <link rel="stylesheet" href="/scritps/css/typewriter.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/scritps/js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
 </head>
+
 <html>
     <body>
-        <div class="body-border">
-            <div class="title">
-                <div class="grid-x grid-padding-x align-center">
-                    <div id="name">
-                       <h1 id="main-title"><:<span class="blink_me">/ </span>Zak Humphrey <span class="blink_me">\</span>:></h1>
+        
+        <div id="particles-js">
+            <div class="title container" style="justify-content: center; bottom: 0">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="typewriter">Hello! I am Zak.</h1>
+                        <h2></h2>
                     </div>
                 </div>
-                <div class="grid-x grid-padding-x align-center">
-                    <div id="desc" class="animate__animated">
-                        <h2 id="subtitle">Welcome to my little corner of the internet.</h2>
-                        <h2 id="subtitle2" style="color: #9CC4C4">So glad you could join me.</h2>
+                <div class="row">
+                    <div class="col subtitle">
+                        <h3>Welcome to my corner of the internet.</h3>
                     </div>
                 </div>
-                <br>
-                <div class="menu grid-x grid-padding-x align-center">
-                    <button id="home" class="button large success round animate__animated" onclick="window.location.href='index.html';">Home</button>
-                    <button id="about" class="button large warning round animate__animated">About Me</button>
-                    <button id="portfolio" class="button large warning round animate__animated">Portfolio</button>
-                    <button id="projects" class="button large warning round animate__animated">Projects</button>
-                    <button id="contact" class="button large warning round animate__animated">Contact</button>
+                <div class="menu">
+                    <button id="home" class="btn btn-success" onclick="window.location.href='index.html';">Home</button>
+                    <button id="about" class="btn btn-warning">About Me</button>
+                    <button id="portfolio" class="btn btn-warning">Portfolio</button>
+                    <button id="projects" class="btn btn-warning">Projects</button>
+                    <button id="contact" class="btn btn-warning">Contact</button>
                 </div>
-            </div>
-            <div class="about">
-                <div class="pic animate__animated hide">
-                     <img id="about_pic" src="assets/untitled.png">
-                </div>
-                <div class="about_text">
-                    <code id="about_ln1" class="hide animate__animated">
-                        Hello! Welcome to my world. I am a wanna-be Electrical Engineer that has a dirty habbit of spending most of my time researching and developing code and learning about Computer Engineering. With the expence of college,
-                        most of what I know is self-taught. I started Uni in 2019 at Metropolitan State University of Denver, then moved online to Southern New Hampshire University due to the pandemic. Eventually having to take a forever 'Gap Year.'
-                    </code><br><br>
-                    <code id="about_ln2" class="hide animate__animated">
-                        I aspire to make my ideas come to life! I consume a lot of YouTube that involves the entire engineering process. A couple of my favorite YouTubers include: Michael Reeves, Wintergatan, bigclivedotcome, colinfurze, John Hammond, Kevin Powell, Mark Rober, Linus Tech Tips, Numberphile, Tech Ingredients, Veritasium, Vsauce, and SO many more!
-                        The reason I put emphasis on YouTube is becuase this is how I learn new things. Like mentioned above, college and uni are VERY expensive in the USA, and so some, like me, have to resort to self-teaching. This process is gruelling and very, very time consuming. 
-                        But I find as you develop yourself in your skills at your own pace and understanding, it adds some sort of uniqueness to your work. I stride to become the best that I can at the things that I am good at, and it's never been a better time.
-                    
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia nostrum atque beatae recusandae voluptates repudiandae quo eius fugiat, cumque dolore molestiae fuga ut vel odio laudantium culpa facilis! Quam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, perferendis magni minus eaque dolores quod voluptate consectetur enim ducimus inventore soluta similique! Sit numquam quae exercitationem nemo aspernatur reprehenderit modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, modi beatae exercitationem blanditiis id, sed eius esse suscipit minus iusto, quo placeat ducimus velit quos dicta facilis error facere quidem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ipsam debitis adipisci, non suscipit explicabo quisquam tenetur quam deleniti quo repudiandae perspiciatis, fuga pariatur? Natus ut sunt facere voluptas enim?
-
-                    </code>
-                    <code id="about_ln3" class="hide animate__animated">
-                    </code>
-                </div>  
-            </div>
-            <div class="footer">
-                <a>Copyright &copy; Zakary Humphrey. All Rights Reserved.</a>
             </div>
         </div>
         
+        <script type="text/javascript" src="/scritps/js/particles.js"></script>
+        <script>
+            particlesJS.load('particles-js',
+            'particles.json', function(){
+                console.log('particles.json loaded...');
+            })
+        </script>
     </body>
 </html>

@@ -1,0 +1,49 @@
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #191919;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+.title h1, h2{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.subtitle h3 {
+    color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.menu {
+    margin-top: 5px;
+}
+
+.menu button {
+    margin: 8px;
+}
+
+@keyframes slideup {
+    from {
+        bottom: 0;
+    }
+
+}
